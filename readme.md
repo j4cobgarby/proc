@@ -10,7 +10,7 @@ The format of an instruction in memory is `0xBAxO`, written as a hexadecimal num
 
 Instructions act on generic registers R1 and R2 to allow the programmer a lot more freedom in what instructions can do, without introducing a lot more instructions. R1 and R2 can each refer to any of A-E, or PC. To select a specific register as R1 or R2, replace the B or A in the format with 0-4 to correspond to registers A-E, or 5 for PC. The available opcodes are as follows:
 
-|------|--------|
+
 |opcode|meaning |
 |------|--------|
 |0x0   |NOP     |
@@ -26,7 +26,6 @@ Instructions act on generic registers R1 and R2 to allow the programmer a lot mo
 |0xa   |R1 -> R2|
 |0xb   |[PC] -> PC|
 |0xc   |[PC] -> R1; PC++|
-|------|-------|
 
 Note that when a register is surrounded by square brackets [], the instruction is referring to the data at the memory address of that register's value. This is similar to the `*` operator in C.
 
