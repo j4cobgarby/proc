@@ -1,5 +1,9 @@
 # A logic circuit + kicad schematic for a 16 bit processor
 
+## Running it yourself
+
+I designed the logic circuit in a program called logisim. You should be able to find this and download it online, and if you're on Linux it's most likely available from your package manager. Once you have it, you should be able to open the file titled `sim.circ`.
+
 ## Architecture
 
 This is a 16-bit processor; the data bus is 16 bits wide, all the instructions act on 16 bit data, etc. Within the processor are five general purpose registers named A-E. There's a program counter (PC), instruction register (IR), memory address register (MAR), and memory data register (MDR).
